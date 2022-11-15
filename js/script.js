@@ -286,7 +286,7 @@ function getRandomNum(min, max) {
 
 /*************************** 4 *** weathermap **************************/
 
-
+//03161e6b7b162037a87b38eada6be5a6
 
 const weatherIcon = document.querySelector('.weather-icon');
 const temperature = document.querySelector('.temperature');
