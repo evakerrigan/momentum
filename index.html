@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player widget active">
+      <div class="player-wrapper">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="song-info">
+          <div class="song-name">
+            <span class="song-name-title">Gumulcinelioglu - Melek Sen</span>
+          </div>
+          <div class="progress-container">
+            <input type="range" name="audio_progress" id="audioProgress" min="0" max="100" value="0" class="audio-progress" />
+          </div>
+          <div class="song-duration">
+            <span class="song-current-time">0:00</span>
+            <span>/</span>
+            <span class="song-duration-time"></span>
+          </div>
+        </div>
+        <div class="volume-wrapper">
+          <button class="volume-icon"></button>
+          <input type="range" name="volume" id="audioVolume" value="30" max="100" class="audio-volume" />
+        </div>
+      </div>      
+      <ul class="play-list"></ul> 
+    </div>
+    <div class="weather widget active">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time widget active"></time>
+    <date class="date widget active"></date>
+    <div class="greeting-container widget active">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quotes-wrapper widget active">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer-block">
+          <a class="footer-github-link" href="https://github.com/evakerrigan" target="_blank">
+            <img src="assets/svg/github_logo.svg" class="footer-github-img" alt="logo github">
+          </a>
+      </div>
+      <div class="footer-block">
+          2022
+      </div>
+      <div class="footer-block footer-rsschool">
+          <a class="footer-rsschool-link" href="https://rs.school/js/" target="_blank">
+              <img src="assets/svg/rs_school_js.svg" class="footer-rsschool-img" alt="logo RS-school">
+          </a>                
+      </div>
+  </div>
+  </footer>
+  <div class="settings-wrapper">
+    <div class="settings-block"></div>
+    <div class="settings widget active">
+      <h3 class="settings-title">Settings</h3>
+      <ul class="settings-list">
+        <li class="settings-item set-language">
+          <span>Language</span>
+          <button class="set-action set-lang-ru active">Ru</button>
+          <button class="set-action set-lang-en">En</button>
+        </li>
+        <li class="settings-item set-audio">
+          <span>Audio</span>
+          <button class="set-action set-check active set-audio-btn"></button>
+        </li>
+        <li class="settings-item set-weather">
+          <span>Weather</span>
+          <button class="set-action set-check active set-weather-btn"></button>
+        </li>
+        <li class="settings-item set-time">
+          <span>Time</span>
+          <button class="set-action set-check active set-time-btn"></button>
+        </li>
+        <li class="settings-item set-date">
+          <span>Date</span>
+          <button class="set-action set-check active set-date-btn"></button>
+        </li>
+        <li class="settings-item set-greeting">
+          <span>Greeting</span>
+          <button class="set-action set-check active set-greeting-btn"></button>
+        </li>
+        <li class="settings-item set-quote">
+          <span>Quote</span>
+          <button class="set-action set-check active set-quote-btn"></button>
+        </li>
+        <li class="settings-item set-image">
+          <span>Background</span><br/>
+          <div class="set-image-wrapper">
+            <button class="set-action set-image-btn active set-github">Github</button>
+            <button class="set-action set-image-btn set-flickr">Flickr</button>
+            <button class="set-action set-image-btn set-unsplash">Unsplash</button>
+          </div>        
+          <input type="text" class="set-tag" disabled="disabled" placeholder="Select teg...">
+        </li>
+        <li class="settings-item set-todo">
+          <span>Todo</span>
+          <button class="set-action set-check active set-todo-btn"></button>
+        </li>
+      </ul>
+    </div>
+  </div>  
+
+  <div class="todo-wrapper widget active">
+    <div class="todo-widget">
+      <div class="todo-main">
+        <ul class="tasks-list"></ul>
+        <form class="todo-item" onsubmit='return false'>
+          <input type="text" class="todo-addtask" id="todo-input" placeholder="Add new task...">
+          <button type="submit" id="add" class="add-btn"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="tracker-wrapper widget active">
+    <div class="tracker-widget">
+      <button id="start" class="btn-tracker start-btn active">start</button>
+      <button id="stop" class="btn-tracker stop-btn">stop</button>
+      <div class="tracker-info">time = <span class="tracker-info-time"></span></div>
+      <div class="tracker-all">all time = <span class="tracker-all-time"></span></div>
+      <div class="tracker-clear">clear</div>
+    </div>
+  </div>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
