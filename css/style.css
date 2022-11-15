@@ -21,6 +21,9 @@ body {
   background-size: cover;
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
@@ -149,7 +152,7 @@ body {
 }
 
 .city {
-  width: 170px;
+  width: 150px;
   height: 34px;
   padding: 5px;
   font-size: 20px;
@@ -370,11 +373,22 @@ body {
 .widget-bg:hover {
   background: linear-gradient(to right bottom, transparent 50%, #ff4500 0) no-repeat 0% 0% / 0em 0em, linear-gradient(135deg, transparent 0em, rgba(255, 255, 255, 0.2) 0);
 }
+.set-tag {
+  width: 150px;
+}
 .set-image-btn.active {
   background-color: #64b5f6;
 }
 .settings-list {
   list-style-type: none;
+  width: 150px;
+}
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+}
+.settings-item.set-image {
+  display: block;
 }
 .settings-wrapper {
   position: absolute;
@@ -489,8 +503,8 @@ input[type="range"]::-ms-fill-upper {
 
 .todo-wrapper {
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 20px;
 }
 .todo-widget {
   width: 300px;
@@ -613,7 +627,7 @@ input[type="range"]::-ms-fill-upper {
 
 .tracker-wrapper {
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: calc(50% - 75px);
   width: 150px;
 }
@@ -627,7 +641,7 @@ input[type="range"]::-ms-fill-upper {
   font-size: 16px;
 }
 .btn-tracker.active {
-  background-color: green;  
+  background-color: #64b5f6;  
 }
 .tracker-info {
   padding: 10px;
@@ -638,15 +652,15 @@ input[type="range"]::-ms-fill-upper {
 }
 .tracker-clear {
   padding: 3px 10px;
-  color: red;
-  border: 1px solid red;
+  color: #64b5f6;
+  border: 1px solid #64b5f6;
   border-radius: 5px;
   cursor: pointer;
   width: 105px;
   margin: 0 auto;
 }
 .tracker-clear:hover {
-  background-color: red;
+  background-color: #64b5f6;
   color: #fff;
 }
 .tracker-clear:active {
