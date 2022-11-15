@@ -364,6 +364,8 @@ body {
 }
 .widget-bg {
   background: linear-gradient(to right bottom, transparent 50%, #ff4500 0) no-repeat 0% 0% / 0.9em 0.9em, linear-gradient(135deg, transparent 0.7em, rgba(255, 255, 255, 0.2) 0);
+  transition: all 0.2s;
+  padding: 15px;
 }
 .widget-bg:hover {
   background: linear-gradient(to right bottom, transparent 50%, #ff4500 0) no-repeat 0% 0% / 0em 0em, linear-gradient(135deg, transparent 0em, rgba(255, 255, 255, 0.2) 0);
