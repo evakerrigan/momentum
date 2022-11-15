@@ -338,8 +338,8 @@ body {
   cursor: pointer;
 }
 .player-wrapper {
-  background: #0000006b;
-  border-radius: 20px;
+  /* background: #0000006b; */
+  /* border-radius: 20px; */
   padding: 20px 30px;
   height: 216px;
   display: flex;
@@ -361,6 +361,12 @@ body {
 .widget.active {
   visibility: visible;
   opacity: 1;
+}
+.widget-bg {
+  background: linear-gradient(to right bottom, transparent 50%, #ff4500 0) no-repeat 0% 0% / 0.9em 0.9em, linear-gradient(135deg, transparent 0.7em, rgba(255, 255, 255, 0.2) 0);
+}
+.widget-bg:hover {
+  background: linear-gradient(to right bottom, transparent 50%, #ff4500 0) no-repeat 0% 0% / 0em 0em, linear-gradient(135deg, transparent 0em, rgba(255, 255, 255, 0.2) 0);
 }
 .set-image-btn.active {
   background-color: #64b5f6;
@@ -389,7 +395,7 @@ body {
   position: absolute;
   bottom: 50px;
   left: 50px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 .set-action {
   cursor: pointer;
@@ -486,8 +492,8 @@ input[type="range"]::-ms-fill-upper {
 }
 .todo-widget {
   width: 300px;
-  background-color: rgba(0, 0, 0, .8);
-  border-radius: 10px;
+  /* background-color: rgba(0, 0, 0, .8); */
+  /* border-radius: 10px; */
   padding: 20px;
 }
 .todo-main {
